@@ -85,7 +85,9 @@ const ArtFinderSearch = ({ searchQ }) => {
 
 
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                // throw new Error(`HTTP error! status: ${response.status}`);
+                setLangflowLoading(false);
+                alert("Something went wrong")
             }
 
             const data = await response.json();
