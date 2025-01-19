@@ -102,8 +102,10 @@ const ArtFinderSearch = ({ searchQ }) => {
             setLangflowLoading(false);
 
         } catch (err) {
-            console.error('Langflow API Error:', err);
-            setLangflowLoading(true);
+            // console.error('Langflow API Error:', err);
+
+            setLangflowLoading(false);
+            alert("Something went wrong")
         }
     };
 
