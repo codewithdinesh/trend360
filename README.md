@@ -90,8 +90,8 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/your-repo/art-finder.git
-cd art-finder
+git clone https://github.com/codewithdinesh/trend360.git
+cd trend360
 Install dependencies for frontend:
 
 bash
