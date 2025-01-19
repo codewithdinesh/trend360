@@ -15,7 +15,7 @@ export async function GET(request) {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                Authorization: `Bearer AstraCS:neIFSWiaErGqRLvEfInMZEgH:735f73bfdc5f738d44407de0d77eaf6a90859618a6226fa8614997bb0304b5d1`,
+                Authorization: `Bearer ${process.env.ASTRA_DB_TOKEN}`,
             },
             body: JSON.stringify({
                 input_value: search,
